@@ -11,6 +11,9 @@ This git repo contains an installer for photoshop CC 2021 on linux with wine.
 Just open a terminal in the folder where the script is located and type "sh install.sh" (without "")
 An uninstaller is given with it too just open a terminal in the folder where the script is located and type "sh uninstall.sh"  (without "")
 
+Change in this fork:
+download and extract the contents of AdobePhotoshop2021.tar.xz to AdobePhotoshop2021/Adobe Photoshop 2021 
+
 ## Requirements
 - wine >=6.1 (Avoid 6.20 to 6.22)
 - zenity
