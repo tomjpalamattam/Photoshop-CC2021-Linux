@@ -1,4 +1,3 @@
-mkdir /home/tom/Downloads/Adobe-Photoshop
 
 wget  https://raw.githubusercontent.com/Winetricks/winetricks/master/src/winetricks
 chmod +x winetricks
@@ -64,7 +63,7 @@ rm -rf /home/tom/apps/progress.mimifile
 touch /home/tom/apps/progress.mimifile
 echo "90" >> /home/tom/apps/progress.mimifile
 
-chmod +x allredist/setup_vkd3d_proton.sh install
+chmod +x allredist/setup_vkd3d_proton.sh 
 WINEPREFIX=/home/tom/apps/Adobe-Photoshop ./allredist/setup_vkd3d_proton.sh install
 
 
@@ -79,8 +78,8 @@ echo 'RESOURCES_PATH="$SCR_PATH/resources"' >> /home/tom/apps/Adobe-Photoshop/dr
 echo 'WINE_PREFIX="$SCR_PATH/prefix"' >> /home/tom/apps/Adobe-Photoshop/drive_c/launcher.sh
 echo 'FILE_PATH=$(winepath -w "/home/tom/apps")' >> /home/tom/apps/Adobe-Photoshop/drive_c/launcher.sh
 echo 'export WINEPREFIX="'/home/tom/apps'/Adobe-Photoshop"' >> /home/tom/apps/Adobe-Photoshop/drive_c/launcher.sh
-echo 'WINEPREFIX='/home/tom/apps'/Adobe-Photoshop DXVK_LOG_PATH='/home/tom/apps'/Adobe-Photoshop DXVK_STATE_CACHE_PATH='/home/tom/apps'/Adobe-Photoshop wine64 ' /home/tom/apps'/Adobe-Photoshop/drive_c/Program\ Files/Adobe/Adobe\ Photoshop\ 2021/photoshop.exe $FILE_PATH' >> /home/tom/apps/Adobe-Photoshop/drive_c/launcher.sh
-
+#echo 'WINEPREFIX='/home/tom/apps'/Adobe-Photoshop DXVK_LOG_PATH='/home/tom/apps'/Adobe-Photoshop DXVK_STATE_CACHE_PATH='/home/tom/apps'/Adobe-Photoshop wine64 ' /home/tom/apps'/Adobe-Photoshop/drive_c/Program\ Files/Adobe/Adobe\ Photoshop\ 2021/photoshop.exe $FILE_PATH' >> /home/tom/apps/Adobe-Photoshop/drive_c/launcher.sh
+echo 'WINEPREFIX='/home/tom/apps'/Adobe-Photoshop DXVK_LOG_PATH='/home/tom/apps'/Adobe-Photoshop DXVK_STATE_CACHE_PATH='/home/tom/apps'/Adobe-Photoshop wine64 ' /home/tom/apps'/Adobe-Photoshop/drive_c/Program\ Files/Adobe/Adobe\ Photoshop\ 2021/photoshop.exe >> /home/tom/apps/Adobe-Photoshop/drive_c/launcher.sh
 chmod +x /home/tom/apps/Adobe-Photoshop/drive_c/launcher.sh
 
 WINEPREFIX=/home/tom/apps/Adobe-Photoshop winecfg -v win10
